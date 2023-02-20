@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Tinos&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
 </head>
@@ -76,7 +83,298 @@
 		<!-- Конец -->
 
 		<div class="main">
-			В данном блоке размещается верстка
+			<div class="header">
+				<div class="container">
+					<div class="header_line">
+						<div class="header_logo">
+							<a href=""><img src="./img/LOGO.png" alt="lol"></a>
+						</div>
+
+						<div class="nav">
+							<a class="nav_item" href="#!">ГЛАВНАЯ</a>
+							<a class="nav_item" href="#!">МЕНЮ</a>
+							<a class="nav_item" href="#!">О НАС</a>
+							<a class="nav_item" href="#!">БРОНЬ</a>
+						</div>
+						<div class="cart">
+							<a href="#!">
+								<img class="cart_img" src="./img/cart.png" alt="">
+							</a>
+						</div>
+						<div class="phone">
+							<div class="phone_holder">
+								<div class="phone_img">
+									<img src="./img/phone.png" alt="">
+								</div>
+								<div class="header_number"><a class="num" href="#!">+999-888-76-54</a></div>
+							</div>
+							<div class="phone_text">
+								Свяжитесь с нами для <br> бронирования
+							</div>
+						</div>
+
+						<button class="menu-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+
+						<button class="btn"> 
+							<a class="button" href="#!">ЗАКАЗ СТОЛИКА</a>
+						</button>
+					</div>
+
+					<div class="header_down">
+						<h1 class="header__title">Добро пожаловать в <br> <span>Наш ресторан</span></h1>
+
+						<div class="header_subtitle">
+							ДОМ ЛУЧШЕЙ ЕДЫ
+						</div>
+
+						<div class="header_btn">
+							<a href="#!" class="header_button">VIEW MENU</a>
+						</div>
+						<div class="header_mob-btn">
+							<a href="#!" class="header_button">МЕНЮ</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="cards">
+				<div class="container">
+					<div class="card_holder">
+						<div class="card">
+							<div class="card_img">
+								<img src="./img/Mask Group.png" alt="lol">
+							</div>
+							<p class="card_title">Магическая <span>Атмосфера</span></p>
+							<p class="card_desc">В нашем заведении царит магическая атмосфера
+							наполненная вкусными ароматами</p>
+						</div>
+
+						<div class="card">
+							<div class="card_img">
+								<img src="./img/Mask Group.png" alt="lol">
+							</div>
+							<p class="card_title">Лучшее качество <span>Еды</span></p>
+							<p class="card_desc">Качество нашей Еды - отменное!</p>
+						</div>
+
+						<div class="card">
+							<div class="card_img">
+								<img src="./img/Mask Group.png" alt="lol">
+							</div>
+							<p class="card_title">Недорогая <span> Eда</span></p>
+							<p class="card_desc">Стоимость нашей Еды
+								зависит только от ее
+								количества. Качество
+							всегда на высоте!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="history">
+				<div class="container">
+					<div class="history_conteiner">
+						<div class="card_history">
+							<h2 class="history_title">
+								Наша <span class="his_title">История</span>
+							</h2>
+							<p class="history_desc">
+								Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.
+							</p>
+							<div class="history_num">
+								<div class="num_item">
+									<p class="number">93</p>
+									<P class="text">Напитки</P>
+								</div>
+
+								<div class="num_item">
+									<p class="number">206</p>
+									<P class="text">Еда</P>
+								</div>
+
+								<div class="num_item">
+									<p class="number">71</p>
+									<P class="text">Закуски</P>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="images">
+							<img class="history_img" src="./img/images.png" alt="lol">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ofer">
+				<div class="container">
+					<div class="ofer-wrapper">
+						<div class="ofer-desc">
+							<p class="ofer-text">
+								Отпразднуйте в одном из самых лучших ресторанов.
+							</p>
+							<p class="ofer-text2">
+								Только в этом месяце бизнес-ланч от 250 ₽
+							</p>
+						</div>
+						<button class="ofer-btn">
+							ЗАКАЗ СТОЛИКА
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<h2 class="bluda_title">Наши <span> Блюда</span></h2>
+					<div class="bluda_container">
+						<img src="./img/Mask Groups.png" alt="" class="big">
+
+						<div class="mini_bluda_container">
+							<div class="mini_bluda">
+								<img src="./img/Mask Group1.png" alt="">
+								<p class="bluda_desc"> Гамбургер мини <span> - - - - - - - - - - - - - - - - - - - - - - -  </span> 220 ₽</p>
+							</div>
+
+							<div class="mini_bluda">
+								<img src="./img/Mask Group1.png" alt="">
+								<p class="bluda_desc"> Гамбургер мини <span> - - - - - - - - - - - - - - - - - - - - - - - </span> 220 ₽</p>
+							</div>
+
+							<div class="mini_bluda">
+								<img src="./img/Mask Group1.png" alt="">
+								<p class="bluda_desc"> Гамбургер мини <span> - - - - - - - - - - - - - - - - - - - - - - - </span> 220 ₽</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+	
+			<section class="burgers">
+				<div class="container">
+					<h1 class="burgers_title">Наше меню</h1>
+					<div class="slider-wrapper">
+
+						<div class="burgers_card">
+							<div class="recom"> <p>RECOMMENDED</p></div>
+							<img class="burgers_img first" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+
+						<div class="burgers_card">
+							<img class="burgers_img" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+						<div class="burgers_card">
+							<img class="burgers_img" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+						<div class="burgers_card">
+							<div class="recom"> <p>RECOMMENDED</p></div>
+							<img class="burgers_img first" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+						<div class="burgers_card">
+							<img class="burgers_img" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+						<div class="burgers_card">
+							<div class="recom"> <p>RECOMMENDED</p></div>
+							<img class="burgers_img first" src="./img/Mask3.png" alt="">
+							<img class="price" src="./img/Ellipse 2.png" alt=""> <span class="price_dig">420</span>
+							<h3 class="burger_title">Гамбургер макси</h3>
+							<p class="burger_desc">Максимально толстый <br> <span>слой мяса</span></p>
+							<button class="burgers_btn">ЗАКАЗАТЬ</button>
+						</div>
+
+					</div>
+					
+					<div class="my-next"></div>
+					<div class="my-prev"></div>
+				</div>
+			</section>
+
+			<section class="review">
+				<div class="review-slider">
+					<div class="review-item">
+						<p class="review_desc">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+						
+						<img class="review_img" src="./img/Mask Group (4).png" alt="">
+						<p class="desc">Посетитель</p>
+						<p class="desc_name">Николай</p>
+					</div>
+					<div class="review-item">
+						<p class="review_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel dolor suscipit corrupti consectetur cupiditate necessitatibus eveniet alias, vitae. Nobis sunt ex fuga eum maiores voluptates nam perspiciatis quaerat pariatur.</p>
+						
+						<img class="review_img" src="./img/Mask Group (4).png" alt="">
+						<p class="desc">Посетитель</p>
+						<p class="desc_name">Николай</p>
+					</div>
+					<div class="review-item">
+						<p class="review_desc">Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!</p>
+						
+						<img class="review_img" src="./img/Mask Group (4).png" alt="">
+						<p class="desc">Посетитель</p>
+						<p class="desc_name">Николай</p>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="gallery">
+				<div class="container">
+					<h2 class="gallery_title">Галерея <span>Блюд</span></h2>
+					<div class="food_img">
+						<img class="food_img_item" src="./img/Mask Group (5).png" alt="">
+						<img class="food_img_item" src="./img/Mask Group (6).png">
+						<img class="food_img_item" src="./img/Mask Group (7).png">
+					</div>
+					<div class="food_img2">
+						<img class="food_img_item" src="./img/Mask Group (6).png" alt="">
+						<img class="food_img_item" src="./img/Mask Group (7).png">
+						<img class="food_img_item" src="./img/Mask Group (5).png">
+					</div>
+					<h2 class="chefs_title">Наши <span> Повара</span> </h2>
+					<div class="container_chefs">
+						<img class="food_img_item1" src="./IMG/Mask Group (8).png" alt="">
+						<img class="food_img_item1" src="./IMG/Mask Group (9).png" alt="">
+						<img class="food_img_item1" src="./IMG/image 4.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="last_img">
+				<img class="last-photo" src="img/footer.png" alt="">
+				<img class="mob-img" src="img/mob.png" alt="">
+			</section>
+
+
+
+
+			<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+			<script src="js/slick.min.js"></script>
+			<script src="js/script.js"></script>
+
 		</div>
 </body>
 </html>
