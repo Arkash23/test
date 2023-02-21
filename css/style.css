@@ -479,7 +479,7 @@ button:hover{
 }
 .burgers_card{
 	position: relative;
-	margin-right: 32px;
+	margin: 0 15px;
 }
 .price_dig{
 	color: #fff;
@@ -490,6 +490,8 @@ button:hover{
 	bottom: 240px;
 	right: 89px;
 }
+
+
 
 .review{
 	text-align: center;
@@ -552,6 +554,7 @@ button:hover{
 }
 .gallery{
 	padding-top: 100px;
+	position:relative;
 }
 .gallery_title{
 	padding-top: 0;
@@ -572,6 +575,24 @@ button:hover{
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
+}
+.gallery:after{
+	position: absolute;
+	content: "";
+	top: 222px;
+	left: 0;
+	background-color: #FF0000;
+	width: 30px;
+	height: 100px;
+}
+.gallery:before{
+	position: absolute;
+	content: "";
+	top: 222px;
+	right: 0;
+	background-color: #FF0000;
+	width: 30px;
+	height: 100px;
 }
 .food_img2{
 	text-align: center;
@@ -621,7 +642,11 @@ button:hover{
 .header_mob-btn{
 	display: none;
 }
-
+.dollars{
+	position: absolute;
+	top: 241px;
+	right: 108px;
+}
 @media (max-width: 1490px){
 	.last-photo{
 		width: 100%;
@@ -656,17 +681,27 @@ button:hover{
 		padding-left: 0;
 	}
 	.price {
-		left: 216px;
+		left: 207px;
 	}
 	.price_dig{
-		left: 242px;
+		left: 232px;
+		top: 241px;
 	}
 	.burgers_btn{
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		margin-left: 0;
 		margin-top: 20px;
 	}
 }	
+@media (max-width: 1220px){
+	.gallery:after{
+		display: none;
+	}
+	.gallery:before{
+		display: none;
+	}
+}
+
 @media (max-width: 1175px){
 	.cart{
 		right: 482px;
@@ -694,7 +729,7 @@ button:hover{
 		flex-direction: column;
 	}
 	.slider-wrapper{
-		width: 397px;	
+		width: 370px;	
 	}
 	.food_img_item{
 		width: 32%;
@@ -784,7 +819,21 @@ button:hover{
 }
 
 @media (max-width: 650px){
-	
+	.dollars:after{
+		position: absolute;
+		content: "$42";
+		left: 4px;
+
+	}
+	.dollars{
+		color: #fff;
+		font-size: 30px;
+		text-align: center;
+		line-height: 33.27px;
+	}
+	.price_dig{
+		display: none ;
+	}
 	.header_btn{
 		display: none;
 	}
@@ -911,8 +960,9 @@ button:hover{
 	
 }
 @media (max-width: 490px){
+
 	.slider-wrapper{
-		width: 289px;
+		width: 282px;
 		margin: 0 auto;
 	}
 	.burgers_img{
@@ -922,6 +972,9 @@ button:hover{
 		padding-left: 0;
 		margin-bottom: 20px;
 		
+	}
+	.dollars:after{
+		left: 30px;
 	}
 	.bluda_title{
 		font-size: 40px;
@@ -943,6 +996,7 @@ button:hover{
 		left: 150px;
 	}
 	.price_dig {
+
 		left: 175px;
 	}
 	.bluda_desc{
@@ -966,6 +1020,14 @@ button:hover{
 	.container_chefs{
 		margin-bottom: 20px;
 	}
+	.gallery_title{
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.gallery_title span{
+		display: block;
+	}
+
 }
 @media (max-width: 370px){
 	.mini_bluda{
@@ -973,21 +1035,17 @@ button:hover{
 		margin-bottom: 87px;
 	}
 	.bluda_desc{
-		margin-left: 155px;
+		margin-left: 165px;
 		font-size: 19px;
 		text-align: center;
 		line-height: 25.3px;
-	}
-	.slick-track{
-		padding-left:  20px;
 	}
 	.review_desc{
 		padding-top: 10px;
 		padding-right: 5px;
 	}
 	.slick-dots{
-		margin-right: 30px;
-		margin-top: 25px;
+		margin-top: 30px;
 		height: 60px;
 	}
 	.chefs_title{

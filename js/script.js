@@ -38,15 +38,6 @@ $(document).ready(function(){
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 2000,
-		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-				
-			}
-
-		}
-		]
 	})
 	
   
