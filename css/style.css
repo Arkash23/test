@@ -453,7 +453,7 @@ button:hover{
 	height: 40px;
 	background-color: #D67E34;
 	border-radius: 30px;
-	left: -90px;
+	left: -100px;
 	bottom: 234px;
 }
 
@@ -466,8 +466,12 @@ button:hover{
 	right: -90px;
 	bottom: 234px;
 }
-
-
+.my-next:hover{
+	cursor: pointer;
+}
+.my-prev:hover{
+	cursor: pointer;
+}
 .price{
 	position: absolute;
 	bottom: 205px;
@@ -617,48 +621,186 @@ button:hover{
 .header_mob-btn{
 	display: none;
 }
-.mob-img{
-	display: none;
-}
 
-@media (max-width: 320px){
-	.header_btn{
+@media (max-width: 1490px){
+	.last-photo{
+		width: 100%;
+		height: 332px;
+	}
+}
+@media (max-width: 1375px){
+	.my-prev{
+		left: 60px;
+	}
+	.my-next{
+		right: 40px;
+	}
+	.slider-wrapper{
+		width: 800px;
+		margin: 0 auto;
+	}
+	.burgers_card {
+		text-align: center;
+		width: 400px;
+	}
+	.burgers_img{
+		padding-left: 0;
+	}
+	.burger_title {
+		padding-left: 0;
+	}
+	.burger_desc{
+		margin: 0 auto; 
+	}
+	.burgers_btn{
+		padding-left: 0;
+	}
+	.price {
+		left: 216px;
+	}
+	.price_dig{
+		left: 242px;
+	}
+	.burgers_btn{
+		margin-bottom: 20px;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}	
+@media (max-width: 1175px){
+	.cart{
+		right: 482px;
+	}
+	.header_logo {
+    	margin-right: -100px;
+	}
+	.nav_item:last-child{
+		margin-right: 0;
+	}
+	.btn{
+		margin-left: 0;
+	}
+	.card_holder{
+		flex-direction: column;
+		
+	}
+	.card{
+		margin: -90px auto 110px;
+	}
+	.card:last-child{
+		margin-bottom: 75px;
+	}
+	.ofer-wrapper{
+		flex-direction: column;
+	}
+	.slider-wrapper{
+		width: 397px;	
+	}
+	.food_img_item{
+		width: 32%;
+	}
+	.container_chefs{
+		flex-direction: column;
+
+	}
+	.food_img_item1{
+		width: 290px;
+		margin: 0 auto 17px auto;
+	}
+	
+
+}
+@media (max-width: 1060px){
+	.nav,
+	.btn,
+	.phone,
+	.cart{
 		display: none;
+	}
+	.my-prev{
+		left: 15px;
+	}
+	.menu-btn{
+		height: 28px;
+		display: flex;
+	}
+	.menu-btn span{
+		height: 4px;
 	}
 	.header{
 		background-position: center;
 	}
-	.container{
-		width: 320px;
-		padding: 0 15px;
+	.history_conteiner{
+		flex-direction: column;
+		justify-content: center;
 	}
-	.btn{
+	.card_history{
+		margin: 0 auto;
+	}
+	.images{
+		display: flex;
+		justify-content: center;
+	}
+	.history{
+		padding-top: 0;
+	}
+	.history_img{
+		margin-top: 45px;
+		width: 320px;
+	}
+	
+	.bluda_desc span{
 		display: none;
 	}
-	.menu-btn{
-		display: flex;
-		position: absolute;
-		right: 8px;
+	.review_desc{
+		width: 800px;
+	}
+
+}
+
+@media (max-width: 910px){
+	.bluda_container{
+		flex-direction: column;
+	}
+	.big{
+		width: 450px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.burgers_title{
+		padding: 65px 0 100px;
+	}
+	.review_desc{
+		width: 580px;
+	}
+	.gallery{
+		padding: 0;
+	}
+	.gallery_title{
+		margin-top: 71px;
+		margin-bottom: 82px;
+	}
+
+}
+
+@media (max-width: 650px){
+	
+	.header_btn{
+		display: none;
 	}
 	.header_logo img{
 		width: 50px;
 		margin-right: 0;
 
 	}
+	.header_down{
+		margin-top: 250px;
+	}
 	.header_line{
 		display: flex;
 		position: relative;
 		padding-top: 20px;
 		
-	}
-	.nav{
-		display: none;
-	}
-	.cart{
-		display: none;
-	}
-	.phone{
-		display: none;
 	}
 	.header_subtitle:before,
 	.header_subtitle:after{
@@ -674,10 +816,7 @@ button:hover{
 	.header_down{
 		width: 290px;
 		margin-top: 252px;
-	}
-	.header_subtitle{
-		font-size: 15px;
-		line-height: 20.43px;
+		margin: 252px auto 202px;
 	}
 	.header_mob-btn{
 		display: inline-block;
@@ -692,32 +831,20 @@ button:hover{
     	height: 47px;
     	margin-top: 41px;
 	}
-	.card_holder{
-		display: flex;
-		flex-direction: column;
-	
-	}
-
 	.card{
-		width: 290px;
+		width: 285px;
 		height: 325px;
-		margin-bottom: 107px;
+		margin: -90px auto 110px;
 	}
-	.card:last-child{
-		margin-bottom: 75px;
-	}
+	
 	.card_desc{
 		margin-top: 30px;
 		font-size: 22px;	
 		line-height: 25.3px;
 	}
-	.history_conteiner{
-		display: block;
-	}
 	.history_title{
 		font-size: 40px;
 		line-height: 46px;
-		margin-bottom: 48px;
 	}
 	.history_title .his_title{
 		display: block;
@@ -725,48 +852,200 @@ button:hover{
 	.card_history{
 		width: 290px;
 		padding: 0;
+		margin: 0 auto;
+
 	}
+
 	.history_desc{
 		width: 290px;
-		margin-bottom: 120px;
+		margin-bottom: 100px;
 	}
 	.history_num{
 		display: block;
 		width: 290px;
 	}
-	.history_img{
-		width: 290px;
-		margin-top: 385px;
-		margin-bottom: 50px;
-	}
-	.number{
-		margin-top: 22px;
-	} 
-	.ofer{
-		margin-top: 0;
-		padding: 0;
-		text-align: center;
-	}
-	.ofer-wrapper{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.ofer-desc{
-		width: 290px;
+	.history_img {
+	    margin-top: 465px;
 	}
 	.ofer-text{
-		width: 290px;
-		font-size: 30px;
+		text-align: center;
+		font-size: 35px;
 		line-height: 34.52px;
 	}
 	.ofer-text2{
-		width: 290px;
-		margin-bottom: 41px;
+		text-align: center;
+		margin-bottom: 45px;
+		margin-top: 22px;
+	}
+	.ofer-desc{
+		width: 290px;	
+	}
+	.ofer{
+		padding: 0;
+
 	}
 	.ofer-btn{
 		margin-bottom: 30px;
 	}
+	.big{
+		width: 290px;
+		
+	}
+	.my-next{
+		width: 0;
+		height: 0;
+	}
+	.my-prev{
+		width: 0;
+		height: 0;
+	}
+		
+	.burgers_card {
+		text-align: center;
+		
+	}
+	.review_desc{
+		width: 290px;
+	}
+	
+	
+}
+@media (max-width: 490px){
+	.slider-wrapper{
+		width: 289px;
+		margin: 0 auto;
+	}
+	.burgers_img{
+		padding-left: 0;
+	}
+	.burger_title{
+		padding-left: 0;
+		margin-bottom: 20px;
+		
+	}
+	.bluda_title{
+		font-size: 40px;
+		line-height: 44.34px;
+		margin-top: 68px;
+		margin-bottom: 63px;
+	}
+	.bluda_title span{
+		display: block;
+	}
+	.burger_desc {
+		margin: 0 auto;
+	}
+	.burgers_btn{
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.price{
+		left: 150px;
+	}
+	.price_dig {
+		left: 175px;
+	}
+	.bluda_desc{
+		transform: translateY(5px);
+	}
+	.history_title{
+		margin-bottom: 50px;
+	}
+	.food_img{
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.food_img_item{
+		width: 100%;
+		margin-bottom: 20px;
+		height: 274px;
+	}
+	.food_img2{
+		flex-direction: column;
+	}
+	.container_chefs{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 370px){
+	.mini_bluda{
+		margin-left: 0;
+		margin-bottom: 87px;
+	}
+	.bluda_desc{
+		margin-left: 155px;
+		font-size: 19px;
+		text-align: center;
+		line-height: 25.3px;
+	}
+	.slick-track{
+		padding-left:  20px;
+	}
+	.review_desc{
+		padding-top: 10px;
+		padding-right: 5px;
+	}
+	.slick-dots{
+		margin-right: 30px;
+		margin-top: 25px;
+		height: 60px;
+	}
+	.chefs_title{
+		margin-top: 70px;
+		margin-bottom: 80px;
+		font-size: 40px;
+		line-height: 46px;
+	}
+	.chefs_title span{
+		display: block;
+	}
+}
+@media (max-width: 330px){
+	.container{
+		width: 320px;
+		padding: 0 15px;
+
+	}
+
+	.header_down{
+		width: 270px;
+		margin-top: 252px;
+	}
+	.header_subtitle{
+		font-size: 15px;
+		line-height: 20.43px;
+	}
+	.card{
+		margin: -90px auto 110px;
+	}
+	.history_desc{
+		margin-bottom: 100px;
+	}
+	.number{
+		margin-top: 22px;
+	}
+	.history_img{
+		margin-top: 340px;
+		width: 290px;
+	}
+	.bluda_desc{
+		margin-left: 155px;
+		font-size: 19px;
+		text-align: center;
+		line-height: 25.3px;
+	}
+	.mini_bluda{
+		margin-left: 0;
+		margin-bottom: 87px;
+	}
+	.mini_bluda img{
+		width: 150px;
+	
+}
+
+/*@media (max-width: 320px){
+	
+
 	.bluda_title{
 		margin-top: 63px;
 		margin-bottom: 68px;
@@ -776,9 +1055,7 @@ button:hover{
 	.bluda_title span{
 		display: block;
 	}
-	.bluda_container{
-		flex-direction: column;
-	}
+	
 	.bluda_desc span{
 		display: none;
 	}
@@ -790,10 +1067,7 @@ button:hover{
 		margin-left: 155px;
 		transform: translateY(10px);
 	}
-	.big{
-		width: 305px;
-		margin-bottom: 50px;
-	}
+	
 	.review_desc{
 		width: 290px;
 	}
@@ -899,4 +1173,4 @@ button:hover{
     right: -90px;
     bottom: 234px;
 	}
-}
+}*/

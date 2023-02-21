@@ -8,15 +8,25 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		responsive: [
 			{
-			    breakpoint: 321,
+			    breakpoint: 1375,
 				settings: {
-					arrows: false,
+			
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					
+				}
+
+			},
+			{
+			    breakpoint: 1175,
+				settings: {
+			
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					
 				}
 
-			}
+			},
 		]
 	})
 
